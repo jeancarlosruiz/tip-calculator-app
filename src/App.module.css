@@ -1,0 +1,11 @@
+@import "styles/index.css";
+
+.container {
+  width: 100%;
+  max-width: 57.5rem;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 2.554rem;
+}

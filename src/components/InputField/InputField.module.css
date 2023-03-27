@@ -1,0 +1,39 @@
+@import "../../styles/index.css";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+input {
+  width: 100%;
+  padding-inline: 1.25rem;
+  padding-block: 0.625rem;
+  text-align: end;
+  background-color: var(--Very-light-grayish-cyan);
+  border: none;
+  border-radius: 0.313rem;
+  color: var(--Very-dark-cyan);
+  caret-color: var(--trong-cyan);
+  font-size: var(--fs-500);
+}
+input:hover {
+  outline: 2px solid hsl(172, 61%, 77%);
+}
+
+input:focus {
+  outline: 2px solid var(--trong-cyan);
+}
+
+.dollar {
+  background-image: url(/src/images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left 5% center;
+}
+
+.person {
+  background-image: url(/src/images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left 5% center;
+}

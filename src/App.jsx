@@ -1,9 +1,17 @@
-import styles from "./App.modules.css";
-import "./utilities/utils";
-import { useState } from "react";
+import React from "react";
+import Header from "./components/Header";
+import TipCalculator from "./components/TipCalculator";
+import styles from "./App.module.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <main className={styles.container}>
+        <Header />
+        <TipCalculator />
+      </main>
+    </>
+  );
 }
 
 export default App;

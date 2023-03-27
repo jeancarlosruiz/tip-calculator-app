@@ -1,1 +1,46 @@
 @import "./normalize.css";
+
+:root {
+  /* Primary */
+
+  --trong-cyan: hsl(172, 67%, 45%);
+
+  /* Neutral */
+
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Font Family */
+  --Space-Mono: "Space Mono", monospace;
+
+  /* Fonts weights */
+  --fw-700: 700;
+
+  /* Fonts sizes*/
+
+  /* 32 - 48px to the font sizes result. */
+  --fs-800: clamp(2rem, 1.2857rem + 3.0476vw, 3rem);
+  /* 24 px, btns and inputs font sizes, never change. */
+  --fs-500: 1.5rem;
+  /* 20px reset btn, never change. */
+  --fs-400: 1.25rem;
+  /* 16px all titles, never change on medias query. */
+  --fs-300: 1rem;
+}
+
+body {
+  background-color: var(--Light-grayish-cyan);
+  font-family: var(--Space-Mono);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-300);
+  color: var(--Dark-grayish-cyan);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}

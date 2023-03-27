@@ -1,0 +1,14 @@
+@import "../../styles/index.css";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 2rem;
+}
+
+@media screen and (min-width: 40.625em) {
+  .header {
+    padding-block-start: 0;
+  }
+}

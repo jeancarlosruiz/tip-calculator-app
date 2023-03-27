@@ -1,0 +1,28 @@
+@import "../../styles/index.css";
+
+.container {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1.563rem 1.563rem 0 0;
+  background-color: var(--White);
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 40.625em) {
+  .container {
+    border-radius: 1.563rem;
+  }
+
+  .formContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 2.5rem;
+    column-gap: 3rem;
+  }
+}

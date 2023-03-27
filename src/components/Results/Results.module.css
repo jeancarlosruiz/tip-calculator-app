@@ -1,0 +1,71 @@
+@import "../../styles/index.css";
+.resultContainer {
+  /* Flex Parent */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding-inline: 1.5rem;
+  padding-block-start: 2.375rem;
+  padding-block-end: 1.5rem;
+  border-radius: 0.938rem;
+  color: var(--White);
+  background-color: var(--Very-dark-cyan);
+}
+
+.resultContainer span {
+  font-size: 0.75rem;
+  color: var(--Dark-grayish-cyan);
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.flexGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results {
+  font-size: var(--fs-800);
+  color: var(--trong-cyan);
+}
+
+.resetBtn {
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+  border: none;
+  border-radius: 0.313rem;
+  transition: 275ms ease;
+  padding: 0.8em 2em;
+  background-color: var(--trong-cyan);
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+  font-size: var(--fs-400);
+}
+
+.resetBtn:hover {
+  background-color: hsl(172, 61%, 77%);
+}
+
+@media screen and (min-width: 40.625em) {
+  .resultContainer {
+    /* Flex parent */
+    gap: 0;
+    justify-content: space-between;
+
+    padding-inline: 2.5rem;
+    padding-block-start: 2.5rem;
+    padding-block-end: 2.5rem;
+
+    /* Grid child */
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+}
